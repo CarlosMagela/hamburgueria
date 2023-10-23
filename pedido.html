@@ -25,7 +25,7 @@
  <div class="listpedido"></div>
         <div id="produtos"></div>
   
-        <h2>Carrinho.</h2>
+        <h2>Pedido</h2>
 <div id="carrinho"></div> 
 
     <script>
@@ -70,7 +70,7 @@
         
         inicializarLoja = () => {
         var containerProdutos = document.getElementById('produtos');
-       
+        var containerPedido = document.getElementById('pedido');
         items.map((val)=>{
             containerProdutos.innerHTML+= `
             
@@ -98,15 +98,24 @@
 
             
             if(val.qtd > 0 ){
-            containerCarrinho.innerHTML+= `
+                const totalPrice = items.reduce((total, items)=> total+(val.preco.toFixed(2) * val.qtd),0)
+            
+            
+            
+                containerCarrinho.innerHTML+= `
             
              
-            <p>`+val.nome+` | quantidade:  `+val.qtd+` | preço: R$ `+val.qtd * val.preco.toFixed(3)+` </p>
+            <p>`+val.nome+` -- quantidade:  `+val.qtd+` -- preço: R$ `+val.qtd * val.preco.toFixed(2)+`</p>
+            <p> total: `+totalPrice.toFixed(2)+`</p>
                 
          <hr>
         
             `;
+
+            
            }
+
+           
         })
         }
         
@@ -126,10 +135,7 @@
             
             atualizarCarrinho();
 
-          
-
-        
-
+    
       
         
         })
