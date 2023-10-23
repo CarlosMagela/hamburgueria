@@ -1,43 +1,118 @@
 body{
     min-width: 320px;
-    max-width: 1024px;
+    width: 900px;
     height: auto;
     align-items: center;
     background-color:rgba(155,155,255);
+   
 }
 
 html{
     min-width: 320px;
-    width: 100%;
-    background-color:rgba(155,155,255);
+    width:980px;
+    
     
     
 }
 
 .banner{
     min-width: 320px;
-    width: 100%;
+    width:900px;
     background-image: url(img/banner2.jfif);
     height: 350px;
-    margin: auto;
-    opacity: 0.8;
+    margin-top: -35px;
+    border: 5px red solid;
+    
+
+  
 
 }
 
 .content{
     display: grid;
-    grid-template-columns:repeat(4, 120px);
-    grid-template-rows: 350px;
-    gap: 40px;
-    margin-left: 5px;
+    grid-template-columns:repeat(3, 220px);
+    grid-template-rows:400px;
+    gap:15px;
     min-width: 320px;
-    
     height:auto;
-    background-color:rgba(155,155,255);
-
-    padding: 35px;
+    margin-left: 30px;
     
 }
+
+
+
+@media (max-width: 1024px) {
+    .banner{
+        width: 72%;
+        margin-left: 0;
+        
+    }
+
+    html{
+        width: 80%;
+    }
+    body{
+        width:1024px;
+        background-color: black;
+    }
+
+    .footer{
+        width:1024px;
+       
+    }
+
+    .content{
+        width: 680px;
+    
+    }
+
+    @media (max-width: 320px) {
+        .banner{
+            width: 40%;
+            margin-left: 0;
+            
+        }
+        .content{
+            width: 40%;
+        }
+        html{
+            width: 40%;
+        }
+        body{
+            width:400px;
+            background-color: black;
+        }
+    
+        .footer{
+            width:400px;
+           
+        }
+    
+        .content{
+            width: 400px;
+        
+        }
+    
+        .main{
+            width: 400px;
+        }
+        .nav{
+            width: 600px;
+            background-color: blue;
+            
+        }
+    }
+
+    .main{
+        width: 400px;
+    }
+    .nav{
+        width: 600px;
+        background-color: blue;
+        
+    }
+}
+
 
 .pedido{
 
@@ -51,7 +126,7 @@ html{
     width: 500px;
     
     height: 400px;
-    background-color:rgba(155,155,255);
+    background-color:black;
 
     padding: 35px;
     
@@ -60,11 +135,12 @@ html{
 .nav a:hover{
     
     text-transform: uppercase;
+    
 }
 .content img{
     min-width: 40%;
-    width: 110px;
-    height: 110px;
+    width: 190px;
+    height: 130px;
     border: 2px solid black;
     box-shadow: 4px 4px  4px black;
     text-align:center;
@@ -73,6 +149,8 @@ img{
     border-radius: 25px;
    
 }
+
+
 h1{
     font-size:50px;
     font-family: cursive;
@@ -81,6 +159,7 @@ h1{
     font-style: italic;
     text-shadow: 2px 2px 4px black;
     text-align: center;
+    
 
 }
 .content p{
@@ -147,14 +226,7 @@ h1{
    padding:20px;
 
 }
-.hero-content{
-    text-align: right;
-    margin-left: 550px;
-   
-    width: 700px;
-    height:auto;
-   background-color:yellowgreen;
-}
+
 
 .nav li{
  
@@ -164,13 +236,14 @@ h1{
     font-family: 'Times New Roman', Times, serif;
     font-style:italic;
     margin-left: 20px;
+    
  
 }
 
 a{
     text-decoration: none;
     color:white;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bolder;
    font-style: italic;
    text-shadow: 2px 2px 2px chocolate;
@@ -179,8 +252,8 @@ a{
 
 .nav{
     position:relative;
-    width:100%;
-    margin-left:0;
+    width:500px;
+    margin-left:20px;
     
 
     background-color: rgba(110,255,127, alpha);
@@ -190,21 +263,23 @@ a{
     font-size: 1rem;
     text-align: center;
     background-color: darkgray;
-    width: 100%;
+    width:700px;
     margin-left: 0;
     background-color:rgba(155,155,255);
-    box-sizing: border-box;
+  
    
     padding: 3px;
     opacity: 0.5;
 }
 
-.card1 ,.card2 ,.card3 ,.card4{
+.card1 ,.card2 ,.card3{
     box-sizing: border-box;
     
-    border: black solid 2px;
+    border: white solid 2px;
     border-radius: 30px;
-    width: 150px;
+    min-width: 150px;
+    width: 220px;
+    gap: 10px;
     padding: 10px;
     background-color: rgba(200,200,110, 80% );
     
@@ -212,10 +287,25 @@ a{
 }
 
 
+.corpo img{
+    width: 600px;
+    height: 300px;
+    margin-left: 40px;
+    
+}
 
 .total{
     font-size: 30px;
     font-weight: bolder;
     margin-top: 200px;
+
 }
 
+h2{
+    font-family: cursive;
+    font-size: 30px;
+    color: white;
+    width: 600px;
+    margin-left: 50px;
+    text-shadow: 2px 3px 4px green;
+}

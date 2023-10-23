@@ -68,7 +68,7 @@ for(var i = 0; i < links.length;i++){
     links[i].addEventListener("click", function(){
         let key = this.getAttribute('key');
         items[key].qtd++;
-        var total = val.preco * val.qtd;
+        var total = val.preco * val.qtd * items;
         preco++;
         atualizarCarrinho();
 

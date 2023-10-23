@@ -77,9 +77,9 @@
             <div class="produtos-single">
                 <img src="`+val.img+`"/>
             <p>`+val.nome+`</p>
-            <p>`+val.preco+`</p>
-            <p>`+val.qtd+`</p>
-            <p>`+val.qtd+`</p>
+            <p>R$ `+val.preco+`</p>
+           
+           
              
             <a key="`+val.id+`" href="#"> Add ao Carrinho<a/>
         
@@ -100,9 +100,8 @@
             if(val.qtd > 0 ){
             containerCarrinho.innerHTML+= `
             
-            
-          
-            <p>`+val.nome+` | quantidade: qtd: `+val.qtd+` | preço: `+val.qtd * val.preco+ ` </p>
+             
+            <p>`+val.nome+` | quantidade:  `+val.qtd+` | preço: R$ `+val.qtd * val.preco+ ` </p>
                 
          <hr>
         
@@ -137,7 +136,6 @@
         }
 
         
-
         </script>
 
 </body>
