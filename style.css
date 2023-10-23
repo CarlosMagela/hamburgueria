@@ -1,14 +1,14 @@
 body{
-    min-width: 320px;
+    min-width:400px;
     width: 900px;
     height: auto;
     align-items: center;
-    background-color:rgba(155,155,255);
+   
    
 }
 
 html{
-    min-width: 320px;
+    min-width: 400px;
     width:980px;
     
     
@@ -16,7 +16,7 @@ html{
 }
 
 .banner{
-    min-width: 320px;
+    min-width:400px;
     width:900px;
     background-image: url(img/banner2.jfif);
     height: 350px;
@@ -33,7 +33,7 @@ html{
     grid-template-columns:repeat(3, 220px);
     grid-template-rows:400px;
     gap:15px;
-    min-width: 320px;
+    min-width:400px;
     height:auto;
     margin-left: 30px;
     
@@ -73,10 +73,10 @@ html{
             
         }
         .content{
-            width: 40%;
+            width: 60%;
         }
         html{
-            width: 40%;
+            width: 60%;
         }
         body{
             width:400px;
@@ -85,11 +85,12 @@ html{
     
         .footer{
             width:400px;
+            margin-bottom: auto;
            
         }
     
         .content{
-            width: 400px;
+            width: 600px;
         
         }
     
@@ -98,7 +99,7 @@ html{
         }
         .nav{
             width: 600px;
-            background-color: blue;
+           
             
         }
     }
@@ -108,7 +109,7 @@ html{
     }
     .nav{
         width: 600px;
-        background-color: blue;
+       
         
     }
 }
