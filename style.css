@@ -1,5 +1,6 @@
 body{
-    min-width:400px;
+    min-width:600px;
+
     width: 800px;
     height: auto;
     align-items: center;
@@ -8,7 +9,7 @@ body{
 }
 
 html{
-    min-width: 400px;
+    min-width: 600px;
     width:780px;
     
     
@@ -16,7 +17,7 @@ html{
 }
 
 .banner{
-    min-width:400px;
+    min-width:600px;
     width:780px;
     background-image: url(img/banner2.jfif);
     height: 350px;
