@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 
-    <title>Document</title>
+    <title>Pedido</title>
  
     <div class="nav">
         <ul>
@@ -77,7 +77,7 @@
             <div class="produtos-single">
                 <img src="`+val.img+`"/>
             <p>`+val.nome+`</p>
-            <p>R$ `+val.preco+`</p>
+            <p>R$ `+val.preco.toFixed(2)+`</p>
            
            
              
@@ -101,7 +101,7 @@
             containerCarrinho.innerHTML+= `
             
              
-            <p>`+val.nome+` | quantidade:  `+val.qtd+` | preço: R$ `+val.qtd * val.preco+ ` </p>
+            <p>`+val.nome+` | quantidade:  `+val.qtd+` | preço: R$ `+val.qtd * val.preco.toFixed(3)+` </p>
                 
          <hr>
         

@@ -1,15 +1,15 @@
 body{
     min-width:400px;
-    width: 900px;
+    width: 800px;
     height: auto;
     align-items: center;
-   
+   background-color: black;
    
 }
 
 html{
     min-width: 400px;
-    width:980px;
+    width:780px;
     
     
     
@@ -17,10 +17,10 @@ html{
 
 .banner{
     min-width:400px;
-    width:900px;
+    width:780px;
     background-image: url(img/banner2.jfif);
     height: 350px;
-    margin-top: -35px;
+    margin-top:0;
     border: 5px red solid;
     
 
@@ -30,82 +30,15 @@ html{
 
 .content{
     display: grid;
-    grid-template-columns:repeat(3, 220px);
+    grid-template-columns:repeat(3, 240px);
     grid-template-rows:400px;
     gap:15px;
     min-width:400px;
     height:auto;
-    margin-left: 30px;
+    margin-left:0;
     
 }
 
-
-
-@media (max-width: 1024px) {
-    .banner{
-        width: 72%;
-        margin-left: 0;
-        
-    }
-
-    html{
-        width: 80%;
-    }
-    body{
-        width:1024px;
-        background-color: black;
-    }
-
-    .footer{
-        width:1024px;
-       
-    }
-
-    .content{
-        width: 680px;
-    
-    }
-
-    @media (max-width:400px) {
-        .banner{
-            width: 60%;
-            margin-left: 0;
-            
-        }
-        .content{
-            width: 60%;
-        }
-        html{
-            width: 60%;
-        }
-        body{
-            width:600px;
-            background-color: black;
-        }
-    
-        .footer{
-            width:600px;
-            margin-bottom:0;
-           
-        }
-    
-        .content{
-            width: 600px;
-        
-        }
-    
-        .main{
-            width: 400px;
-        }
-        .nav{
-            width: 400px;
-           
-            
-        }
-    }
-
- 
-}
 
 
 .pedido{
@@ -167,14 +100,6 @@ h1{
     text-shadow: 2px 2px white;
 }
 
-.venda{
-    display: flex;
-    justify-content: space-between;
-    width: 250px;
-    margin-top: 100px;
-    margin-right: 200px;
-
-}
 
 #produtos{
     display: flex;
@@ -211,8 +136,8 @@ h1{
 
 #carrinho{
     display: flexbox;
-    margin-left: 0;
-    font-size: 13px;
+    margin-left: 150px;
+    font-size: 20px;
     color: black;
     margin-right: 200px;
     background-color: gray;
@@ -257,8 +182,8 @@ a{
     font-size: 1rem;
     text-align: center;
     background-color: darkgray;
-    width:700px;
-    margin-left: 0;
+    width:750px;
+    margin-left:-10px;
     background-color:rgba(155,155,255);
   
    
@@ -271,8 +196,7 @@ a{
     
     border: white solid 2px;
     border-radius: 30px;
-    min-width: 150px;
-    width: 220px;
+   
     gap: 10px;
     padding: 10px;
     background-color: rgba(200,200,110, 80% );
@@ -282,9 +206,11 @@ a{
 
 
 .corpo img{
-    width: 600px;
+    width: 740px;
     height: 300px;
-    margin-left: 40px;
+    margin-left:0;
+    border: 2px solid white;
+    
     
 }
 
