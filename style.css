@@ -66,9 +66,9 @@ html{
     
     }
 
-    @media (max-width: 320px) {
+    @media (max-width:400px) {
         .banner{
-            width: 40%;
+            width: 60%;
             margin-left: 0;
             
         }
@@ -79,13 +79,13 @@ html{
             width: 60%;
         }
         body{
-            width:400px;
+            width:600px;
             background-color: black;
         }
     
         .footer{
-            width:400px;
-            margin-bottom: auto;
+            width:600px;
+            margin-bottom:0;
            
         }
     
@@ -98,20 +98,13 @@ html{
             width: 400px;
         }
         .nav{
-            width: 600px;
+            width: 400px;
            
             
         }
     }
 
-    .main{
-        width: 400px;
-    }
-    .nav{
-        width: 600px;
-       
-        
-    }
+ 
 }
 
 
