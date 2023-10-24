@@ -4,7 +4,7 @@ body{
     min-height: 100%;
     min-width:600px;
 
-    width:1380px;
+    width:1420px;
     height: auto;
     align-items: center;
    background-color: black;
@@ -13,17 +13,17 @@ body{
 
 html{
     min-width: 600px;
-    width:1380px;
+    width:1420px;
     min-height: 100%;    
     
     
 }
 header{
-    width: 1320px;
+    width:1440px;
 }
 .banner{
     min-width:600px;
-    width:1400PX;
+    width:1440px;
     background-image: url(img/banner2.jfif);
     height: 450px;
     margin-top:0;
@@ -157,7 +157,6 @@ h1{
  
    
     display: inline-block;
-    font-size: 2.6em;
     font-family: 'Times New Roman', Times, serif;
     font-style:italic;
     margin-left: 20px;
@@ -165,10 +164,13 @@ h1{
  
 }
 
-a{
+.nav a{
     text-decoration: none;
+    border-bottom: 5px solid white;
+    border-left: 5px solid white;
+    border-radius: 20px;
     color:white;
-    font-size: 30px;
+    font-size: 60px;
     font-weight: bolder;
    font-style: italic;
    text-shadow: 2px 2px 2px chocolate;
@@ -177,25 +179,25 @@ a{
 
 .nav{
     position:relative;
-    width:500px;
+    width:100%;
+    text-align: center;
+  
     margin-left:20px;
-    
-
     background-color: rgba(110,255,127, alpha);
 }
 
 .footer{
-    font-size: 1rem;
+    font-size: 2rem;
     text-align: center;
     background-color: darkgray;
     width:1400px;
     margin-left:0;
+    height: auto;
     background-color:rgba(105,105,205);
     padding: 133px;
-    margin-top:2100px;
-    position:fixed;
-    margin-bottom:0;
-    
+    position:relative;
+    bottom:0;
+    margin-bottom: 0;
 }
 
 .card1 ,.card2 ,.card3, .card4{
@@ -217,7 +219,7 @@ a{
     height: 300px;
     margin-left:150px;
     border: 2px solid white;
-    margin-bottom: auto;
+    margin-bottom:100px;
     
 }
 
@@ -238,11 +240,3 @@ h2{
 }
 
 
-@media (320px) {
-    .pedido{
-        margin-left: 0;
-        font-size: 20px;
-        width: 200px;
-    
-    }
-}
