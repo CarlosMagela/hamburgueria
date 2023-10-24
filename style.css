@@ -1,7 +1,7 @@
 body{
     min-width:600px;
 
-    width: 980px;
+    width:1200px;
     height: auto;
     align-items: center;
    background-color: black;
@@ -10,7 +10,7 @@ body{
 
 html{
     min-width: 600px;
-    width:980px;
+    width:1220px;
     
     
     
@@ -18,7 +18,7 @@ html{
 
 .banner{
     min-width:600px;
-    width:980px;
+    width:1220px;
     background-image: url(img/banner2.jfif);
     height: 350px;
     margin-top:0;
@@ -33,7 +33,7 @@ html{
     display: grid;
     grid-template-columns:repeat(4, 235px);
     grid-template-rows:400px;
-    gap:15px;
+    gap:90px;
     min-width:400px;
     height:auto;
     margin-left:0;
@@ -44,18 +44,15 @@ html{
 
 .pedido{
 
-    display:flexbox;
-    justify-content: space-between;
-    
 
-  font-size: 10px;
+ font-size: 10px;
   color: black;
 
     margin-left: 5px;
 
-    width: 300px;
+    width: 200px;
     
-    height: 600px;
+    height: 400px;
     background-color:black;
 
     padding: 35px;
@@ -108,8 +105,8 @@ h1{
 #produtos{
     display: flex;
     justify-content: space-between;
-    margin-left: 0;
-    width: 400px;
+    margin-left: -20px;
+    width: 350px;
     height: 180px;
     font-size: 10px;
     background-color: beige;
@@ -140,12 +137,12 @@ h1{
 
 #carrinho{
     display: flexbox;
-    margin-left: 10px;
+    margin-left: -20px;
     font-size: 20px;
     color: black;
     margin-right: 200px;
     background-color: gray;
-    width: 400px;
+    width: 350px;
    padding:20px;
 
 }
@@ -186,11 +183,11 @@ a{
     font-size: 1rem;
     text-align: center;
     background-color: darkgray;
-    width:750px;
-    margin-left:-10px;
-    background-color:rgba(155,155,255);
-  
-   position: absolute;
+    width:1220px;
+    margin-left:-100px;
+    background-color:rgba(105,105,205);
+    margin-top: 70px;
+     position: absolute;
     padding: 3px;
     opacity: 0.5;
 }
@@ -210,9 +207,9 @@ a{
 
 
 .corpo img{
-    width: 740px;
+    width: 940px;
     height: 300px;
-    margin-left:0;
+    margin-left:150px;
     border: 2px solid white;
     
     
@@ -229,7 +226,7 @@ h2{
     font-family: cursive;
     font-size: 30px;
     color: white;
-    width: 600px;
-    margin-left: 50px;
+    width: 900px;
+    margin-left: 150px;
     text-shadow: 2px 3px 4px green;
 }
