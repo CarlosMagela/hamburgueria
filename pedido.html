@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -77,7 +77,7 @@
             <div class="produtos-single">
                 <img src="`+val.img+`"/>
             <p>`+val.nome+`</p>
-            <p>R$ `+val.preco.toFixed(2)+`</p>
+            <p>R$ `+val.preco+`</p>
            
            
              
@@ -96,23 +96,24 @@
             
         items.map((val)=>{
 
+          
             
             if(val.qtd > 0 ){
-                const totalPrice = items.reduce((total, items)=> total+(val.preco.toFixed(2) * val.qtd),0)
+
+                
+                const totalPrice = items.reduce((total, id, preco)=> total+(val.preco * val.qtd),0)
             
-            
-            
+                
                 containerCarrinho.innerHTML+= `
             
-             
-            <p>`+val.nome+` -- quant:  `+val.qtd+` -- preço: R$ `+val.qtd * val.preco.toFixed(2)+`</p>
-            <p> total: `+totalPrice.toFixed(2)+`</p>
+            
+            <p>`+val.nome+` -- quant:  `+val.qtd+` -- preço: R$ `+val.preco * val.qtd+`</p>
+            
                 
          <hr>
         
             `;
 
-            
            }
 
            
