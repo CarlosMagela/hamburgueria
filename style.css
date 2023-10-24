@@ -1,7 +1,7 @@
 body{
     min-width:600px;
 
-    width:1200px;
+    width:1380px;
     height: auto;
     align-items: center;
    background-color: black;
@@ -10,15 +10,17 @@ body{
 
 html{
     min-width: 600px;
-    width:1220px;
+    width:1380px;
     
     
     
 }
-
+header{
+    width: 1320px;
+}
 .banner{
     min-width:600px;
-    width:1220px;
+    width:100%;
     background-image: url(img/banner2.jfif);
     height: 350px;
     margin-top:0;
@@ -36,7 +38,7 @@ html{
     gap:90px;
     min-width:400px;
     height:auto;
-    margin-left:0;
+    margin-left:50px;
     
 }
 
@@ -48,7 +50,7 @@ html{
  font-size: 10px;
   color: black;
 
-    margin-left: 5px;
+    margin-left: 450px;
 
     width: 200px;
     
@@ -183,8 +185,8 @@ a{
     font-size: 1rem;
     text-align: center;
     background-color: darkgray;
-    width:1220px;
-    margin-left:-100px;
+    width:1380px;
+    margin-left:0;
     background-color:rgba(105,105,205);
     margin-top: 70px;
      position: absolute;
@@ -229,4 +231,14 @@ h2{
     width: 900px;
     margin-left: 150px;
     text-shadow: 2px 3px 4px green;
+}
+
+
+@media (320px) {
+    .pedido{
+        margin-left: 0;
+        font-size: 20px;
+        width: 200px;
+    
+    }
 }
