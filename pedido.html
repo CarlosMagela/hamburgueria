@@ -21,7 +21,7 @@
 </head>
 <body class="pedido">
 
-  
+
  <div class="listpedido"></div>
             <h3>Produto</h3>
         <div id="produtos"></div>
@@ -97,25 +97,36 @@
             containerCarrinho.innerHTML = "";
             
         items.map((val)=>{
+        
+             
 
-          
             
             if(val.qtd > 0 ){
 
-                
-                const totalPrice = items.reduce((total, id, preco)=> total+(val.preco * val.qtd),0)
             
-                
+               
+                var valor_unitario = val.preco;
+                var qtd = val.qtd;
+                var total = valor_unitario * qtd;
+
+                var total = 0;
+                for(var i =0;i<items.map.length; i++ ){
+            total=+ items[i].qtd++ * items[i].preco;
+                    console.log(total)
+                }
+
+      
+
                 containerCarrinho.innerHTML+= `
             
             
-            <p>`+val.nome+` -- quant:  `+val.qtd+` -- preço: R$ `+val.preco * val.qtd+`</p>
-            
+            <p>`+val.nome+` -- quant:  `+val.qtd+` valor unitario: `+val.preco+`</p>
+         
                 
          <hr>
         
             `;
-
+       
            }
 
            
