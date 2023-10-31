@@ -73,6 +73,7 @@
         inicializarLoja = () => {
         var containerProdutos = document.getElementById('produtos');
         var containerPedido = document.getElementById('pedido');
+        var containerPedidos = document.getElementsByClassName('produtos-single'); 
         items.map((val)=>{
             containerProdutos.innerHTML+= `
             
@@ -92,6 +93,8 @@
         }
         inicializarLoja();
         
+
+        var pedido = [];
         atualizarCarrinho = () => {
             var containerCarrinho = document.getElementById('carrinho');
             containerCarrinho.innerHTML = "";
@@ -104,24 +107,35 @@
             if(val.qtd > 0 ){
 
             
-               
-                var valor_unitario = val.preco;
-                var qtd = val.qtd;
-                var total = valor_unitario * qtd;
+               var total = val.qtd * val.preco;
 
-                var total = 0;
-                for(var i =0;i<items.map.length; i++ ){
-            total=+ items[i].qtd++ * items[i].preco;
-                    console.log(total)
-                }
+               for (var i = 0; i<items.map.length;i++){
 
+                var total =+ val.preco;
+                pedido.push(val.id, val.nome, val.preco, val.qtd);
+               }
+                   
+
+                    function gerarPedido(){
+                        var total = 0;
+                 for(var i = 0 ; i<pedido.length; i++){
+
+                    var total = pedido[x] * val.qtd;
+                    i++;
+                   
+                    function getSum(qtd, preco ){
+                        return total + Math.round(total)
+                    }
+
+                 }
+               }
       
 
                 containerCarrinho.innerHTML+= `
             
             
             <p>`+val.nome+` -- quant:  `+val.qtd+` valor unitario: `+val.preco+`</p>
-         
+             <p>valor total :`+ val.preco * val.qtd +`</p>
                 
          <hr>
         

@@ -351,3 +351,64 @@ h3{
     margin-top: -100px;
 }
 
+@media (max-width: 450px) {
+.pedido{
+    font-display:inherit ;
+    width: 200px;
+    margin-left: -170px;
+}
+#produtos{
+    height:900px;
+    display: flexbox;
+    flex-wrap: wrap;
+    justify-content:stretch;  
+
+    width: 300px;
+}
+#carrinho{
+    width: 320px;
+}
+
+
+.nav2 li{
+    display: inline;
+    font-size: 15px;
+    margin-left: 30px;
+    margin-right: 1px;
+   
+
+}
+
+.sobre{
+    width: 370px;
+    margin-left: 10px;
+}
+.nav3{
+   
+    font-size: 15px;
+    margin-left:-100px;
+    }
+
+#psobre{
+    margin-left: 10px;
+}
+
+.footer-sobre{
+
+    margin-top: 100px;
+    font-size: 1.0em;
+    color: white;
+    text-align:left;
+    background-color: darkgray;
+    width:420px;
+    margin-left:-40px;
+    padding:0;
+    height:140px;
+    background-color:rgba(220, 197, 197, 0.4);
+   
+  
+   margin-bottom:0;
+
+}
+
+}
