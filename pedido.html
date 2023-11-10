@@ -93,7 +93,7 @@
         }
         inicializarLoja();
         
-
+        var total = 0 ;
         var pedido = [];
         atualizarCarrinho = () => {
             var containerCarrinho = document.getElementById('carrinho');
@@ -107,30 +107,32 @@
             if(val.qtd > 0 ){
 
             
-               var total = val.qtd * val.preco;
+         
 
                for (var i = 0; i<items.map.length;i++){
 
-                var total =+ val.preco;
-                pedido.push(val.id, val.nome, val.preco, val.qtd);
+                
+                pedido.push(val.preco);
+               
+                var total = 0;
+                function gerarPedido(){
+                     
+                 for(var i = 0 ; i<pedido[2].length; i++){
+                   
+                 total=+
+            
+                  console.log(total)   
+                   
+        }
+       
+
                }
                    
+             
 
-                    function gerarPedido(){
-                        var total = 0;
-                 for(var i = 0 ; i<pedido.length; i++){
-
-                    var total = pedido[x] * val.qtd;
-                    i++;
-                   
-                    function getSum(qtd, preco ){
-                        return total + Math.round(total)
-                    }
-
-                 }
                }
       
-
+     
                 containerCarrinho.innerHTML+= `
             
             
@@ -160,7 +162,16 @@
            
             
             
-            
+            var total = 0;
+                for(var i = 0; i<pedido.length; i++){
+                    
+                    var total =+ pedido[i];
+                    i++;
+                    console.log(total)
+                }   
+
+                   
+                  
             atualizarCarrinho();
 
     
@@ -171,3 +182,11 @@
 
         
         </script>
+
+<footer class="footer" style="width: 450px;">
+    <p> by-Carlos Eduardo Magela</p>
+       <p> @copyRight</p>
+    </footer>
+</body>
+
+</html>
