@@ -82,10 +82,10 @@ min-width: 200px;
    
 }
 
-.nav1 a:hover{
+#nav-nav:hover{
     
     text-transform: uppercase;
-    
+    background-color: green;
 }
 .content img{
 
@@ -99,8 +99,6 @@ img{
     border-radius: 25px;
    
 }
-
-
 
 h1{
     font-size:50px;
@@ -205,12 +203,13 @@ a{
 .nav2 li{
  
    
-    display: inline-block;
+    display: inline;
     font-family: 'Times New Roman', Times, serif;
     font-style:italic;
     margin-left:20px;
     margin-bottom: 30px;
   }
+  
 
 .nav2 a{
 
@@ -387,8 +386,8 @@ h3{
     margin-left:10px;
     margin-bottom: 0;
 
-
 }
+
 
 .footer{
     
@@ -432,6 +431,8 @@ h3{
     width: 360px;
 }
 
+
+
 #produtos{
     height:600px;
     display: flexbox;
@@ -454,11 +455,15 @@ h3{
 }
 
 .nav1{
-    display: inline-block;
-    width:350px;
-    margin-left:10 ;
+    display: inline;
+    width:390px;
+    margin-left:0;
+    margin-right: 0;
+}
 
-
+.nav1 li{
+    display: inline;
+    
 }
 .nav2{
     max-width:450px;
@@ -492,8 +497,6 @@ h3{
 .pedido{
     width: 420px;
     margin-left:-140px;
-
-
 }
 
 
