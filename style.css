@@ -171,7 +171,7 @@ a{
      display: inline;
     font-family: 'Times New Roman', Times, serif;
     font-style:italic;
-    font-size: 2.2em;
+    font-size: 2.0em;
     margin-left:20px;
     width: 600px;
     border-left: 10px solid white;
@@ -184,7 +184,7 @@ a{
     
     text-decoration: none;
     color:white;
-    font-size:2.7em;
+    font-size:1.7em;
     font-weight: bolder;
     font-style: italic;
     text-shadow: 2px 2px 2px chocolate;
