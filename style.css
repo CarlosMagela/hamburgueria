@@ -167,20 +167,20 @@ a{
     margin-bottom: 30px;
     text-decoration: none;
 }
-.nav1 ul{
-    margin-right: 620px;
-}
+
+
 .nav1 li{
      display: inline-block;
     font-family: 'Times New Roman', Times, serif;
     font-style:italic;
+    font-size: 2.2em;
     margin-left:20px;
+    width: 600px;
     
   }
 
-.nav1 a{
-
-    
+.nav1 a{    
+    display:inline-flex;
     text-decoration: none;
     border-bottom: 5px solid white;
     border-left: 5px solid white;
@@ -188,9 +188,9 @@ a{
     color:white;
     font-size:2.7em;
     font-weight: bolder;
-   font-style: italic;
-   text-shadow: 2px 2px 2px chocolate;
-  text-align: left;
+    font-style: italic;
+    text-shadow: 2px 2px 2px chocolate;
+    text-align: left;
        
 }
 
@@ -418,6 +418,7 @@ h3{
     max-width: 450px;
     text-align: center;
     margin-left: 10px;
+   
 
 }
 
@@ -439,21 +440,29 @@ h3{
     width: 349px;
 }
 #carrinho{
-    width: 320px;
+    width: 370px;
 }
 
 
 .nav2 li{
     display: inline;
     font-size: 15px;
-    margin-left: 30px;
+    margin-left: 20px;
     margin-right: 1px;
    
 
 }
+
+.nav1{
+    display: inline-block;
+    width:350px;
+    margin-left:10 ;
+
+
+}
 .nav2{
     max-width:450px;
-    margin-left:55px ;
+    margin-left:85px ;
 }
 
 .nav3{
