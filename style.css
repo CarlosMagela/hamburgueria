@@ -156,6 +156,7 @@ h1{
     background-color: gray;
     width: 450px;
    padding:20px;
+   height: 400px;
 
 }
 
@@ -291,6 +292,36 @@ a{
     margin-bottom:0;
   
 }
+.footer-home{
+    margin-top: 100px;
+    font-size: 1.4em;
+    color: white;
+    text-align:center;
+    min-width:450px;
+    background-color: darkgray;
+    max-width:1350px;
+    width:100%;
+    padding: 20px;
+    height:140px;
+    background-color:rgba(220, 197, 197, 0.4);
+    margin-bottom:0;
+    
+}
+.footer-pedido{
+    margin-top: 100px;
+    font-size: 1.4em;
+    color: white;
+    text-align:center;
+    background-color: darkgray;
+    max-width:1340px;
+    width:1440px;
+    padding: 20px;
+    height:100px;
+    background-color:rgba(220, 197, 197, 0.4);
+    margin-bottom:0;
+    margin-left: -300px;
+  
+}
 
 .card1 ,.card2 ,.card3, .card4{
     box-sizing: border-box;
@@ -306,9 +337,9 @@ a{
 
 .corpo img{
 
-    width: 600px;
+    width: 900px;
     height: 500px;
-    margin-left:190px;
+    margin-left:100px;
     border: 2px solid white;
     margin-bottom:100px;
     
@@ -340,60 +371,72 @@ h3{
 }
 
 .corpo .img1{
-    margin-left: -150px;
+    margin-left: 20px;
 }
 
 .corpo .img2{
-    margin-left: 480px;
+    margin-left: 280px;
     margin-top: -100px;
 }
 
 @media (max-width: 450px) {
 .pedido{
-    min-height: auto;
-    font-display:inherit ;
-    max-width: 360px;
-    margin-left:-170px;
+    height: auto;
+    width: 100%;
+    max-width: 380px;
+    margin-left:10px;
     margin-bottom: 0;
 
 
 }
 
 .footer{
-    margin: 0;    
+    
     font-size: 1.0em;
     color: white;
     text-align:center;
     background-color: darkgray;
-    width:100%;
+    width:470px;
     padding:20px;
     height:140px;
     background-color:rgba(220, 197, 197, 0.4);
     margin-bottom:0;
+    margin-top: 100px;
 }
-
+.footer-pedido {
+    
+    width: 100%;
+    margin-left:140px;
+}
+.footer-home
+{
+    font-size: 30px;
+    width:100%;
+    margin-left:10px;
+}
 .sobre{
     max-width: 450px;
     text-align: center;
     margin-left: 10px;
 
 }
+
+#produtos{
+    width:470px;
+    display:flex;
+    align-items:center;
+}
 .sobre p{
     margin-left: 10px;
     width: 360px;
 }
-.footer{
-    margin-left: 0;
-    margin-top: 100px;
-    width: 100%;
-}
+
 #produtos{
-    height:900px;
+    height:600px;
     display: flexbox;
     flex-wrap: wrap;
-    justify-content:stretch;  
 
-    width: 300px;
+    width: 349px;
 }
 #carrinho{
     width: 320px;
