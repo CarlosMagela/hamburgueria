@@ -91,8 +91,7 @@
         })
         }
         inicializarLoja();
-        
-        var total = 0 ;
+      
         var pedido = [];
         atualizarCarrinho = () => {
             var containerCarrinho = document.getElementById('carrinho');
@@ -101,36 +100,35 @@
         items.map((val)=>{
         
              
-
-            
+    
             if(val.qtd > 0 ){
 
+        
             
-         
-
                for (var i = 0; i<items.map.length;i++){
+               
+                var total = val.preco;
+                
+                
 
                 
-                pedido.push(val.preco);
+                pedido.push( total);
+                
+                var total = '';
                
-                var total = 0;
-                function gerarPedido(){
-                     
-                 for(var i = 0 ; i<pedido[2].length; i++){
-                   
-                 total=+
-            
-                  console.log(total)   
-                   
-        }
-       
-
-               }
+                
+                var total = pedido.reduce(function(accumulator, value){
+                    return accumulator + value;
+                    
+                })
+                console.log(total.toFixed(2))
+                
                    
              
 
                }
-      
+
+        
      
                 containerCarrinho.innerHTML+= `
             
@@ -161,14 +159,15 @@
            
             
             
-            var total = 0;
+            var total = " ";
                 for(var i = 0; i<pedido.length; i++){
-                    
                     var total =+ pedido[i];
                     i++;
-                    console.log(total)
+                    
+                    
+                    
                 }   
-
+console.log(total)
                    
                   
             atualizarCarrinho();
